@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 my-3">
+            <ul class="nav nav-tabs">
+                <li class="active nav-item">
+                    <a class="nav-link" [routerLink]="['/users',10]" routerLinkActive="bg-warning" href="#">Users</a></li>
+                <li class="nav-item">
+                    <a href="#" routerLink="/departments" [queryParams]="{'paramName' :'1'}" routerLinkActive="bg-warning" class="nav-link">Departments</a></li>
+                <li class="nav-item">
+                    <a href="#" routerLink="/posts" routerLinkActive="bg-warning" class="nav-link">Lazy Posts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+</div>
